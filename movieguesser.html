@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BhollyWood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container1">
+            <input type="button" class="bollywood-title" id="btn1" value="B">
+            <input type="button" class="bollywood-title" id="btn2" value="O">
+            <input type="button" class="bollywood-title" id="btn3" value="L">
+            <input type="button" class="bollywood-title" id="btn4" value="L">
+            <input type="button" class="bollywood-title" id="btn5" value="Y">
+            <input type="button" class="bollywood-title" id="btn6" value="W">
+            <input type="button" class="bollywood-title" id="btn7" value="O">
+            <input type="button" class="bollywood-title" id="btn8" value="O">
+            <input type="button" class="bollywood-title" id="btn9" value="D">
+        </div>
+        <div class="container">
+
+        </div>
+
+        <div class="gameoptions">
+            <button type="button" class="btn btn-outline-dark" data-target="#exampleModalCenter" id="new-game">
+                NEW GAME
+            </button>
+
+            <button type="button" class="btn btn-outline-dark" id="score">
+            </button>
+
+            <button type="button" class="btn btn-outline-dark" data-target="#exampleModalCenter" id="reset-game">
+                RESET GAME
+            </button>
+
+        </div>
+
+
+        <div class="keyboard" id="keys">
+            <ul class="keyboard-ul-list">
+                <button id="keyboard1">A</button>
+                <button id="keyboard2">B</button>
+                <button id="keyboard3">C</button>
+                <button id="keyboard4">D</button>
+                <button id="keyboard5">E</button>
+                <button id="keyboard6">F</button>
+                <button id="keyboard7">G</button>
+                <button id="keyboard8">H</button>
+            </ul>
+            <ul class="keyboard-ul-list">
+                <button id="keyboard9">I</button>
+                <button id="keyboard10">J</button>
+                <button id="keyboard11">K</button>
+                <button id="keyboard12">L</button>
+                <button id="keyboard13">M</button>
+                <button id="keyboard14">N</button>
+                <button id="keyboard15">O</button>
+                <button id="keyboard16">P</button>
+            </ul>
+            <ul class="keyboard-ul-list">
+                <button id="keyboard17">Q</button>
+                <button id="keyboard18">R</button>
+                <button id="keyboard19">S</button>
+                <button id="keyboard20">T</button>
+                <button id="keyboard21">U</button>
+                <button id="keyboard22">V</button>
+                <button id="keyboard23">W</button>
+                <button id="keyboard24">X</button>
+            </ul>
+            <ul class="keyboard-ul-list">
+                <button id="keyboard25">Y</button>
+                <button id="keyboard26">Z</button>
+            </ul>
+            <ul class="keyboard-ul-list-digits">
+                <button id="keyboard27">0</button>
+                <button id="keyboard28">1</button>
+                <button id="keyboard29">2</button>
+                <button id="keyboard30">3</button>
+                <button id="keyboard31">4</button>
+                <button id="keyboard32">5</button>
+                <button id="keyboard33">6</button>
+                <button id="keyboard34">7</button>
+                <button id="keyboard35">8</button>
+                <button id="keyboard36">9</button>
+            </ul>
+        </div>
+
+        <div class="reset">
+
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalCenter"
+                id="hint-1">
+                SHOW HINT 1
+            </button>
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalCenter"
+                id="hint-2">
+                SHOW HINT 2
+            </button>
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalCenter"
+                id="hint-3">
+                SHOW HINT 3
+            </button>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static"
+                data-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">HINT</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modal-content">
+                        </div>
+                        <div class="modal-footer">
+                            <p></p>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>

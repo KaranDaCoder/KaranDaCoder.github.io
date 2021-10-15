@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+   
+    margin-top: 10rem;
+}
+
+#id2003, #id2007 {
+    margin: 1em;
+    padding: 1em;
+    font-size: xx-large;
+}
