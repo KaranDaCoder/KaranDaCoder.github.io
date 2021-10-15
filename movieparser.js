@@ -1,5 +1,5 @@
-import {bollywood_movies_2003} from './jsons/Bollywood_2003Parser.js';
-import {bollywood_movies_2007} from './jsons/Bollywood_2007Parser.js';
+import {bollywood_movies_2003} from '.Bollywood_2003Parser.js';
+import {bollywood_movies_2007} from '.Bollywood_2007Parser.js';
 
 
 //locators here:
