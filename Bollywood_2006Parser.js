@@ -1,4 +1,4 @@
-var movies_2006 = [
+let export bollywood_movies_2006 = [
     {
       "id": "2006_0",
       "name": "36 China Town",
@@ -736,7 +736,7 @@ var movies_2006 = [
     }
   ]
 
-
+export {bollywood_movies_2006}
   /*
   let movie_name = [];
 let movieId = 0;
@@ -761,7 +761,3 @@ console.log(JSON.stringify(movie_name));
  
 */
 
-function getMovieName() {
-  let selectionMOvie = Math.floor(Math.random() * movies_2006.length);
-  console.log(movies_2006[selectionMOvie]);
-}
