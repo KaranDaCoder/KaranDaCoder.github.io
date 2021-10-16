@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  color: black;
+  /*  background: url('/movie_background.jpg');
+    opacity: 0.8;
+    */
+    color: white;
+    height: 100vh;
+    background: rgb(66, 10, 66);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(movie_background.jpg);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 2fr));
+  grid-template-rows: 2rem 30rem auto;
+}
+
+.navigation {
+  grid-column: 1/-1;
+ 
+}
+.intro {
+  grid-column: 1/-1;
+  text-align: center;
+  font-weight: 900;
+    font-size: 2.0em;
+  margin: 1em;
+  border-radius: 45px 65px 25px 25px ;
+  
+}
+
+#title{
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+#about{
+    margin-top: 4rem;
+    font-size: 0.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.bollywood-list, .top-grossing {
+  grid-column: span 1;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #5a2b2b;
+  margin: 1em;
+  border-radius: 25px 25px 25px 25px ;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  grid-template-rows: 2em 5em 30em;
+  background: rgba(216, 190, 190, 0.507);
+  border-radius: 45px 65px 25px 25px ;
+  
+}
+
+.play > h2 {
+  color: white;
+  grid-column: 1/-1;
+  padding: 0.6em;
+  font-size: 2em;
+  background: rgb(66, 10, 66);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border-radius: 25px 25px 0 0;
+
+}
+
+.play > p {
+  grid-column: span 1;
+  padding: 0.5em;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+
+.top-grossing > div > div > h2{
+  grid-column: span 1;
+  color: rgb(255, 255, 255);
+  border-radius: 25px 25px 0 0;
+  background: rgb(66, 10, 66);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+}
+
+.hollywood {
+  grid-column: span 1;
+  background: silver;
+}
+
+
+/*Play Buttons*/
+ 
+.play-buttons {
+    grid-column: span 1/-1;
+    padding: 1em;
+    
+}
+
+.play-buttons > a{
+    display: inline-flex;
+    margin: 1em;
+    width: auto;
+    padding: 0.2em;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border: 6px solid white;
+    letter-spacing: 2.2px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+  }
+  
+  .play-buttons1 > a{
+    margin: 1em;
+    width: auto;
+    padding: 0.5em;
+    height: 65px;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border: 6px solid white;
+    letter-spacing: 2.1px;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 15px 15px 15px 15px;
+  }
