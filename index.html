@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <title>MOVE DATA</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to Movie Mania</h1>
-        <h2> Select Movie And Game To Play</h2>
-        <br>
-        <br>
-        <h1>BOLLYWOOD</h1>
-        <button id="id2003"><a href="movieguesser.html">2003</a></button>
-        <button id="id2004"><a href="movieguesser.html">2004</a></button>
-        <button id="id2005"><a href="movieguesser.html">2005</a></button>
-        <button id="id2006"><a href="movieguesser.html">2006</a></button>
-        <button id="id2007"><a href="movieguesser.html">2007</a></button>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="movie_mania.css" />
+    <title>Movie Mania</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navigation">
+        <h2 id="home">HOME</h2>
+      </div>
+      <div class="intro">
+        <h1 id="title">WELCOME TO MOVIE MANIA</h1>
+        <h3 id="about">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat id
+          saepe unde neque aliquam quae minima quod cupiditate aliquid qui.
+        </h3>
+      </div>
+      <div class="bollywood-list">
+          <div class="box">
+              <div class="play">
+                <h2>Bollywoood Movies</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, repudiandae.</p>
+                <div class="play-buttons">
+                    <a href="movieguesser.html" id="id2003">2003 Movies</a>
+                    <a href="movieguesser.html" id="id2004">2004 Movies</a>
+                    <a href="movieguesser.html" id="id2005">2005 Movies</a>
+                    <a href="movieguesser.html" id="id2006">2006 Movies</a>
+                    <a href="movieguesser.html" id="id2007">2007 Movies</a>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="top-grossing">
+        <div class="box">
+            <div class="play">
+              <h2>Top Grossing Movies</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, repudiandae.</p>
+              <div class="play-buttons1">
+                  <a href="#">Bollywood</a>
+                  <a href="#">Telugu</a>
+                  <a href="#">Super-Hero</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="hollywood">
+        <h2>Hollywood Movies</h2>
+      </div>
     </div>
-   
-</body>
-<script type="module" src="movieparser.js"></script>
+  </body>
+  <script type="module" src="movieparser.js"></script>
 </html>
