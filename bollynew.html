@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guesser.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Guesser</title>
+</head>
+
+<body>
+
+    <div class="guesser-container">
+        <div class="home">
+            <h2 id="home">HOME</h2>
+        </div>
+        <div class="rules">
+            <h2 id="rules">RULES</h2>
+        </div>
+
+        <div class="blank-container">
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">/</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">/</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+            <span id="button0">_</span>
+        </div>
+
+        <div class="attempts-btn">
+            <div class="container1">
+                <span id="btn1">B</span>
+                <span id="btn2">O</span>
+                <span id="btn3">L</span>
+                <span id="btn4">L</span>
+                <span id="btn5">Y</span>
+                <span id="btn6">W</span>
+                <span id="btn7">O</span>
+                <span id="btn8">O</span>
+                <span id="btn9">D</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hints-score-container">
+
+        <div class="hint1">
+            <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalCenter"
+                id="hint1">HINT1</a>
+        </div>
+
+        <div class="hint2">
+            <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalCenter"
+                id="hint2">HINT2</a>
+        </div>
+
+        <div class="hint3">
+            <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalCenter"
+                id="hint3">HINT3</a>
+        </div>
+    </div>
+
+    <div class="keyboard" id="keys">
+        <ul class="keyboard-ul-list">
+            <button id="keyboard1">A</button>
+            <button id="keyboard2">B</button>
+            <button id="keyboard3">C</button>
+            <button id="keyboard4">D</button>
+            <button id="keyboard5">E</button>
+            <button id="keyboard6">F</button>
+            <button id="keyboard7">G</button>
+            <button id="keyboard8">H</button>
+        </ul>
+        <ul class="keyboard-ul-list">
+            <button id="keyboard9">I</button>
+            <button id="keyboard10">J</button>
+            <button id="keyboard11">K</button>
+            <button id="keyboard12">L</button>
+            <button id="keyboard13">M</button>
+            <button id="keyboard14">N</button>
+            <button id="keyboard15">O</button>
+            <button id="keyboard16">P</button>
+        </ul>
+        <ul class="keyboard-ul-list">
+            <button id="keyboard17">Q</button>
+            <button id="keyboard18">R</button>
+            <button id="keyboard19">S</button>
+            <button id="keyboard20">T</button>
+            <button id="keyboard21">U</button>
+            <button id="keyboard22">V</button>
+            <button id="keyboard23">W</button>
+            <button id="keyboard24">X</button>
+        </ul>
+        <ul class="keyboard-ul-list">
+            <button id="keyboard25">Y</button>
+            <button id="keyboard26">Z</button>
+        </ul>
+        <ul class="keyboard-ul-list-digits">
+            <button id="keyboard27">0</button>
+            <button id="keyboard28">1</button>
+            <button id="keyboard29">2</button>
+            <button id="keyboard30">3</button>
+            <button id="keyboard31">4</button>
+            <button id="keyboard32">5</button>
+            <button id="keyboard33">6</button>
+            <button id="keyboard34">7</button>
+            <button id="keyboard35">8</button>
+            <button id="keyboard36">9</button>
+        </ul>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">HINT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-content">
+                </div>
+                <div class="modal-footer">
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
